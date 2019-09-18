@@ -1,0 +1,31 @@
+.footer {
+  &-social {
+    img {
+      height: 30px;
+      width: 30px;
+    }
+  }
+}
+
+table.button {
+  table td {
+    background: url(/assets/img/btn_1.png);
+    width: 158px;
+    height: 38px;
+    a {
+      color: red;
+    }
+  }
+}
+
+table.button:hover,
+table.button:visited,
+table.button:active {
+  table a {
+    border-width: 0px;
+    text-decoration: underline;
+  }
+  table td {
+    background: url(/assets/img/btn_1.png);
+  }
+}
