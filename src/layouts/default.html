@@ -18,56 +18,19 @@
           <center>
             <spacer size="32"></spacer>
             <container>
-              <spacer size="16"></spacer>
               <row>
                 <columns>
-                  <img src="{{ root }}/assets/img/header.png" />
-                  {{!-- Pages you create in the src/pages/ folder are inserted here when the flattened emails are created. --}}
+                  {{> header}}
                   {{> body}}
                 </columns>
               </row>
-              <row class="collapsed footer">
-                <columns>
-                  <spacer size="16"></spacer>
-                  <p class="text-center">
-                    @copywrite nobody<br />
-                    <a href="#">hello@nocopywrite.com</a> |
-                    <a href="#">Manage Email Notifications</a> |
-                    <a href="#">Unsubscribe</a>
-                  </p>
-                  <center>
-                    <menu class="footer-social">
-                      <item
-                        ><img
-                          src="{{ root }}/assets/img/color-instagram-48.png"
-                          alt=""
-                      /></item>
-                      <item
-                        ><img
-                          src="{{ root }}/assets/img/color-twitter-48.png"
-                          alt=""
-                      /></item>
-                      <item
-                        ><img
-                          src="{{ root }}/assets/img/color-facebook-48.png"
-                          alt=""
-                      /></item>
-                      <item
-                        ><img
-                          src="{{ root }}/assets/img/color-link-48.png"
-                          alt=""
-                      /></item>
-                    </menu>
-                  </center>
-                  <p>
-                    <small
-                      >You received this email because you're signed up to get
-                      updates from us.
-                      <a href="#">Click here to unsubscribe.</a></small
-                    >
-                  </p>
-                </columns>
-              </row>
+              {{#if blog }}
+              {{> blog}}
+              {{/if}}
+              {{#if product }}
+              {{> products}}
+              {{/if}}
+              {{> footer}}
             </container>
           </center>
         </td>

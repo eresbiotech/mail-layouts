@@ -1,0 +1,35 @@
+<row class="collapsed footer">
+  <columns>
+    <spacer size="16"></spacer>
+    <p class="text-center">
+      @copywrite nobody<br />
+      <a href="mailto:bilgi@bilimkutusu.com">bilgi@bilimkutusu.com</a> |
+      <a href="#">Manage Email Notifications</a>
+    </p>
+    <center>
+      <menu class="footer-social">
+        <item href="https://www.instagram.com/bilimkutusucom/"
+          ><img src="{{ root }}/assets/img/color-instagram-48.png" alt=""
+        /></item>
+        <item href="https://twitter.com/bilimkutusucom"
+          ><img src="{{ root }}/assets/img/color-twitter-48.png" alt=""
+        /></item>
+        <item href="https://www.facebook.com/bilimkutusucom/"
+          ><img src="{{ root }}/assets/img/color-facebook-48.png" alt=""
+        /></item>
+        <item href="https://bilimkutusu.com"
+          ><img src="{{ root }}/assets/img/color-link-48.png" alt=""
+        /></item>
+      </menu>
+    </center>
+    {{#if unsubscribe}}
+    <spacer size="16"></spacer>
+    <p class="text-center">
+      <small
+        >You received this email because you're signed up to get updates from
+        us. <br /><a href="#">Click here to unsubscribe.</a></small
+      >
+    </p>
+    {{/if}}
+  </columns>
+</row>
