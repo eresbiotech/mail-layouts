@@ -3,7 +3,6 @@ subject: Newsletter Email Template Subject
 description: Newsletter Email Template Description
 blog: true
 product: true
-unsubscribe: true
 ---
 
 <container>
@@ -15,7 +14,19 @@ unsubscribe: true
       <p>
         Kaydınız başarı ile tamamlanmıştır.
       </p>
-      <p>Teşekkürler bilgi@bilimkutusu.com</p>
+      <p>Teşekkürler {- email -}</p>
+    </columns>
+  </row>
+
+  <row>
+    <columns large="1" class="quote">
+      <img src="{{ root }}/assets/img/marie-curie.jpg" class="thumbnail" />
+    </columns>
+    <columns>
+      <blockquote>
+        İnsanlar konusunda daha az, fikirler konusunda daha çok meraklı olun.
+        <b>Marie Curie</b>
+      </blockquote>
     </columns>
   </row>
 </container>

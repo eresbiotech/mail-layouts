@@ -109,4 +109,18 @@ ul {
       margin-right: auto !important;
     }
   }
+  .quote {
+    th {
+      text-align: center;
+    }
+  }
+}
+
+.order {
+  &-detail {
+    td,
+    th {
+      line-height: 2;
+    }
+  }
 }

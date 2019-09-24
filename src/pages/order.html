@@ -1,12 +1,13 @@
 ---
 subject: Order Email Template Subject
 description: Order Email Template Description
+blog: true
+product: true
 ---
 
-<h1>Siparişiniz için teşekkür ederiz</h1>
-<p>Merhaba <b>Susan Calvin</b>,</p>
+<h1>Merhaba {- order.customer.FirstName -}</h1>
 <p>
-  Siparişiniz için teşekkür ederiz. Sipariniz 3 gün içersinde kargoya
+  Siparişiniz için teşekkür ederiz. Sipariniz 3 iş günü içersinde kargoya
   verilecektir. Bu esnada sipariş özetinize göz atın:
 </p>
 
@@ -17,15 +18,15 @@ description: Order Email Template Description
     <columns large="6">
       <p>
         <strong>Ödeme Türü</strong><br />
-        Banka Havalesi / EFT
+        {- paymentMethod -}
       </p>
       <p>
         <strong>E-posta Adresi</strong><br />
-        bilgi@bilimkutusu.com
+        {- order.customer.FirstName -}
       </p>
       <p>
         <strong>Sipariş Numrası</strong><br />
-        #000000001
+        #{- order.number -}
       </p>
       <strong>Kargo Yöntemi </strong><br />
       PTT (1&ndash;3 Gün)<br />
@@ -33,17 +34,19 @@ description: Order Email Template Description
     <columns large="6">
       <p>
         <strong>Teslimat adresi</strong><br />
-        11111111110<br />
-        +90 850 885 29 03<br />
-        Emek Mahallesi Bişkek Caddesi 44/6<br />
-        Çankaya / Ankara, 06010
+        {- shippingAddress.identityNumber -}<br />
+        {- shippingAddress.phoneNumber -}<br />
+        {- shippingAddress.address -}<br />
+        {- shippingAddress.town -} / {- shippingAddress.city -}, {-
+        shippingAddress.postcode -}
       </p>
       <p>
-        <strong>Teslimat adresi</strong><br />
-        11111111110<br />
-        +90 850 885 29 03<br />
-        Emek Mahallesi Bişkek Caddesi 44/6<br />
-        Çankaya / Ankara, 06010
+        <strong>Fatura adresi</strong><br />
+        {- billingAddress.identityNumber -}<br />
+        {- billingAddress.phoneNumber -}<br />
+        {- billingAddress.address -}<br />
+        {- billingAddress.town -} / {- billingAddress.city -}, {-
+        billingAddress.postcode -}
       </p>
     </columns>
   </row>
@@ -51,21 +54,17 @@ description: Order Email Template Description
 
 <h4>Sipariş Detayı</h4>
 
-<table>
+<table class="order-detail">
   <tr>
     <th>Ürün</th>
     <th>Fiyat</th>
   </tr>
   <tr>
-    <td>Kağıt Devre ve Elektrik</td>
-    <td>₺178.00</td>
-  </tr>
-  <tr>
-    <td>Astronot Çiftçiler Deney Seti</td>
-    <td>₺89.00</td>
+    <td>{- productName -} x {- quantity -}</td>
+    <td>{- price -}</td>
   </tr>
   <tr>
     <td><b>Toplam:</b></td>
-    <td>₺267.00</td>
+    <td>{- itemsTotal -}</td>
   </tr>
 </table>
