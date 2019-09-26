@@ -1,0 +1,97 @@
+{
+  "customer": {
+    "name": "Ömer Büyükçelik",
+    "email": "omer@eresbiotech.com",
+    "identityNumber": "11111111110"
+  },
+  "order": {
+    "shipmentNo": "0000001",
+    "paymentMethod": "Kredi Kartı",
+    "number": "0000001",
+    "shippingAddress": {
+      "phoneNumber": "+90 850 885 29 03",
+      "address": "Emek Mahallesi Bişkek Caddesi 44/6",
+      "town": "Çankaya",
+      "city": "Ankara",
+      "postcode": "06010"
+    },
+    "billingAddress": {
+      "phoneNumber": "+90 850 885 29 03",
+      "address": "Emek Mahallesi Bişkek Caddesi 44/6",
+      "town": "Çankaya",
+      "city": "Ankara",
+      "postcode": "06010"
+    },
+    "items": [
+      {
+        "name": "Astronot Çiftçiler Deney Seti",
+        "quantity": 1,
+        "price": "89,00 ₺"
+      },
+      {
+        "name": "Asit Baz Ph",
+        "quantity": 2,
+        "price": "178,00 ₺"
+      },
+      {
+        "name": "Kağıt Devre ve Elektrik",
+        "quantity": 1,
+        "price": "89,00 ₺"
+      }
+    ],
+    "itemsTotal": "356,00 ₺"
+  },
+  "blogs": [
+    {
+      "title": "23 EYLÜL EKİNOKS - GÜNDÜZ VE GECE EŞİT OLUYOR",
+      "content": "Eylül ayının ortalarına geldiğimiz şu günlerde havalar yaz aylarına göre soğumaya başladı. 23 Eylül’deki Sonbahar Ekinoksu yaklaşıyor.",
+      "img": "https://bilimkutusu.com/media/cache/blog_featured/01/35/a6c1d7fcdc3885c2eaa5ffb35d1e.jpeg",
+      "url": "https://bilimkutusu.com/tr_TR/blog/article/23-eylul-ekinoks-gunduz-ve-gece-esit-oluyor"
+    },
+    {
+      "title": "YAZ BİLİM KAMPI BAŞLIYOR!",
+      "content": "Bilim Kutusu, yaz tatilini verimli değerlendirmek isteyenler için Bilime Merhaba bilim kampını açıyor.",
+      "img": "https://bilimkutusu.com/media/cache/blog_featured/33/49/1a65e5244c1e5604d13ff1eb6873.png",
+      "url": "https://bilimkutusu.com/tr_TR/blog/article/yaz-bilim-kampi-basliyor"
+    }
+  ],
+  "footer": {
+    "copyright": "@2019 bilimkutusu",
+    "social": [
+      {
+        "url": "https://www.instagram.com/bilimkutusucom/",
+        "img": "/assets/img/color-instagram-48.png"
+      },
+      {
+        "url": "https://twitter.com/bilimkutusucom/",
+        "img": "/assets/img/color-twitter-48.png"
+      },
+      {
+        "url": "https://www.facebook.com/bilimkutusucom/",
+        "img": "/assets/img/color-facebook-48.png"
+      },
+      {
+        "url": "https://www.youtube.com/channel/UCwRy2pkOr4Khu6G7Ag7VZqA",
+        "img": "/assets/img/color-youtube-48.png"
+      },
+      {
+        "url": "https://bilimkutusu.com",
+        "img": "/assets/img/color-link-48.png"
+      }
+    ],
+    "menu": [
+      {
+        "text": "bilgi@bilimkutusu.com",
+        "url": "mailto:bilgi@bilimkutusu.com"
+      },
+      {
+        "text": "Hesabım",
+        "url": "https://bilimkutusu.com/tr_TR/account/"
+      },
+      {
+        "text": "Siparişim",
+        "url": "https://bilimkutusu.com/tr_TR/account/orders/"
+      }
+    ]
+  }
+}

@@ -5,7 +5,7 @@ blog: true
 product: true
 ---
 
-<h1>Merhaba {- order.customer.FirstName -}</h1>
+<h1>Merhaba {{ data.customer.name }}</h1>
 <p>
   Siparişiniz için teşekkür ederiz. Sipariniz 3 iş günü içersinde kargoya
   verilecektir. Bu esnada sipariş özetinize göz atın:
@@ -18,15 +18,15 @@ product: true
     <columns large="6">
       <p>
         <strong>Ödeme Türü</strong><br />
-        {- paymentMethod -}
+        {{ data.order.paymentMethod }}
       </p>
       <p>
         <strong>E-posta Adresi</strong><br />
-        {- order.customer.FirstName -}
+        {{ data.customer.email }}
       </p>
       <p>
         <strong>Sipariş Numrası</strong><br />
-        #{- order.number -}
+        #{{ data.order.number }}
       </p>
       <strong>Kargo Yöntemi </strong><br />
       PTT (1&ndash;3 Gün)<br />
@@ -34,19 +34,21 @@ product: true
     <columns large="6">
       <p>
         <strong>Teslimat adresi</strong><br />
-        {- shippingAddress.identityNumber -}<br />
-        {- shippingAddress.phoneNumber -}<br />
-        {- shippingAddress.address -}<br />
-        {- shippingAddress.town -} / {- shippingAddress.city -}, {-
-        shippingAddress.postcode -}
+        {{ data.customer.identityNumber }}<br />
+        {{ data.order.shippingAddress.phoneNumber }}<br />
+        {{ data.order.shippingAddress.address }}<br />
+        {{ data.order.shippingAddress.town }} /
+        {{ data.order.shippingAddress.city }},
+        {{ data.order.shippingAddress.postcode }}
       </p>
       <p>
         <strong>Fatura adresi</strong><br />
-        {- billingAddress.identityNumber -}<br />
-        {- billingAddress.phoneNumber -}<br />
-        {- billingAddress.address -}<br />
-        {- billingAddress.town -} / {- billingAddress.city -}, {-
-        billingAddress.postcode -}
+        {{ data.customer.identityNumber }}<br />
+        {{ data.order.billingAddress.phoneNumber }}<br />
+        {{ data.order.billingAddress.address }}<br />
+        {{ data.order.billingAddress.town }} /
+        {{ data.order.billingAddress.city }},
+        {{ data.order.billingAddress.postcode }}
       </p>
     </columns>
   </row>
@@ -59,12 +61,14 @@ product: true
     <th>Ürün</th>
     <th>Fiyat</th>
   </tr>
+  {{#each data.order.items}}
   <tr>
-    <td>{- productName -} x {- quantity -}</td>
-    <td>{- price -}</td>
+    <td>{{ this.name }} x {{ this.quantity }}</td>
+    <td>{{ this.price }}</td>
   </tr>
+  {{/each}}
   <tr>
     <td><b>Toplam:</b></td>
-    <td>{- itemsTotal -}</td>
+    <td>{{ data.order.itemsTotal }}</td>
   </tr>
 </table>

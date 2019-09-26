@@ -11,23 +11,23 @@
       </columns>
     </row>
 
-    {-#each blogs-}
+    {{#each data.blogs}}
     <row>
       <columns large="6">
-        <a href="{- url -}">
-          <img class="thumbnail" style="width: 250px" src="{- img -}" />
+        <a href="{{ this.url }}">
+          <img class="thumbnail" style="width: 250px" src="{{ this.img }}" />
         </a>
       </columns>
       <columns large="6">
-        <a href="{- url -}">
-          <h3>{- title -}</h3>
+        <a href="{{ this.url }}">
+          <h3>{{ this.title }}</h3>
         </a>
         <p>
-          {- content -}
-          <a href="{- url -}">Devamını oku</a>
+          {{ this.content }}
+          <a href="{{ this.url }}">Devamını oku</a>
         </p>
       </columns>
     </row>
-    {-/each-}
+    {{/each}}
   </columns>
 </row>

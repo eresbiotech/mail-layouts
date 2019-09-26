@@ -2,28 +2,16 @@
   <columns>
     <spacer size="16"></spacer>
     <p class="text-center">
-      @2019 bilimkutusu<br />
-      <a href="mailto:bilgi@bilimkutusu.com">bilgi@bilimkutusu.com</a> |
-      <a href="https://bilimkutusu.com/tr_TR/account/">Hesabım</a> |
-      <a href="https://bilimkutusu.com/tr_TR/account/orders/">Siparişim</a>
+      {{ data.footer.copyright }}<br />
+      {{#each data.footer.menu}}
+      <a href="{{ this.url }}">{{ this.text }}</a>
+      {{/each}}
     </p>
     <center>
       <menu class="footer-social">
-        <item href="https://www.instagram.com/bilimkutusucom/"
-          ><img src="{{ root }}/assets/img/color-instagram-48.png" alt=""
-        /></item>
-        <item href="https://twitter.com/bilimkutusucom"
-          ><img src="{{ root }}/assets/img/color-twitter-48.png" alt=""
-        /></item>
-        <item href="https://www.facebook.com/bilimkutusucom/"
-          ><img src="{{ root }}/assets/img/color-facebook-48.png" alt=""
-        /></item>
-        <item href="https://www.youtube.com/channel/UCwRy2pkOr4Khu6G7Ag7VZqA"
-          ><img src="{{ root }}/assets/img/color-youtube-48.png" alt=""
-        /></item>
-        <item href="https://bilimkutusu.com"
-          ><img src="{{ root }}/assets/img/color-link-48.png" alt=""
-        /></item>
+        {{#each data.footer.social}}
+        <item href="{{ this.url }}"><img src="{{ root }}{{ this.img }}"/></item>
+        {{/each}}
       </menu>
     </center>
     {{#if unsubscribe}}
