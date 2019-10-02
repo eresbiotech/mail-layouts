@@ -1,0 +1,23 @@
+---
+subject: User Registration Email Template Subject
+description: User Registration Email Template Description
+product: true
+blog: true
+---
+
+<container>
+  <spacer size="16"></spacer>
+
+  <row>
+    <columns>
+      <h1>Bilim dünyasına hoşgediniz!</h1>
+      <p>
+        Kaydınız başarı ile tamamlanmıştır.
+      </p>
+      <p>Teşekkürler {{ data.customer.name }}</p>
+      <br />
+      E-posta adresinizi doğrulamak için lütfen
+      <a href="{- url -}">bu adresini ziyaret edin</a>.
+    </columns>
+  </row>
+</container>
