@@ -2,7 +2,7 @@
 subject: Newsletter Email Template Subject
 description: Newsletter Email Template Description
 blog: true
-product: true
+product: false
 ---
 
 <container>
@@ -14,7 +14,7 @@ product: true
       <p>
         Kaydınız başarı ile tamamlanmıştır.
       </p>
-      <p>Teşekkürler {{ data.customer.email }}</p>
+      <p>Teşekkürler {- email -}</p>
     </columns>
   </row>
 

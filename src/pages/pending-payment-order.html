@@ -1,11 +1,11 @@
 ---
 subject: Shipment Confirmation Email Template Subject
 description: Shipment Confirmation Email Template Description
-blog: true
+blog: false
 product: true
 ---
 
-<h1>Merhaba {{ data.customer.name }}</h1>
+<h1>Merhaba {- customer_fullname }</h1>
 
 <p>
   Siparişiniz için teşekkür ederiz. Ödemeniz gerçekleşene kadar siparişiniz
@@ -19,15 +19,15 @@ product: true
     <columns large="6">
       <p>
         <strong>Ödeme Türü</strong><br />
-        {{ data.order.paymentMethod }}
+        {- payment_method -}
       </p>
       <p>
         <strong>E-posta Adresi</strong><br />
-        {{ data.customer.email }}
+        {- customer_email -}
       </p>
       <p>
         <strong>Sipariş Numrası</strong><br />
-        #{{ data.order.number }}
+        #{- order_number -}
       </p>
       <strong>Kargo Yöntemi </strong><br />
       PTT (1&ndash;3 Gün)<br />
@@ -35,21 +35,21 @@ product: true
     <columns large="6">
       <p>
         <strong>Teslimat adresi</strong><br />
-        {{ data.customer.identityNumber }}<br />
-        {{ data.order.shippingAddress.phoneNumber }}<br />
-        {{ data.order.shippingAddress.address }}<br />
-        {{ data.order.shippingAddress.town }} /
-        {{ data.order.shippingAddress.city }},
-        {{ data.order.shippingAddress.postcode }}
+        {- shipping_address.identity_number -}<br />
+        {- shipping_address.phone_number -}<br />
+        {- shipping_address.address -}<br />
+        {- shipping_address.town -} /
+        {- shipping_address.city -},
+        {- shipping_address.postcode -}
       </p>
       <p>
         <strong>Fatura adresi</strong><br />
-        {{ data.customer.identityNumber }}<br />
-        {{ data.order.billingAddress.phoneNumber }}<br />
-        {{ data.order.billingAddress.address }}<br />
-        {{ data.order.billingAddress.town }} /
-        {{ data.order.billingAddress.city }},
-        {{ data.order.billingAddress.postcode }}
+        {- billing_address.identity_number -}<br />
+        {- billing_address.phone_number -}<br />
+        {- billing_address.address -}<br />
+        {- billing_address.town -} /
+        {- billing_address.city -},
+        {- billing_address.postcode -}
       </p>
     </columns>
   </row>
@@ -62,15 +62,15 @@ product: true
     <th>Ürün</th>
     <th>Fiyat</th>
   </tr>
-  {{#each data.order.items}}
+  {-#each items-}
   <tr>
-    <td>{{ this.name }} x {{ this.quantity }}</td>
-    <td>{{ this.price }}</td>
+    <td>{- name -} x {- quantity -}</td>
+    <td>{- price -}</td>
   </tr>
-  {{/each}}
+  {-/each-}
   <tr>
     <td><b>Toplam:</b></td>
-    <td>{{ data.order.itemsTotal }}</td>
+    <td>{- items_total -}</td>
   </tr>
 </table>
 
