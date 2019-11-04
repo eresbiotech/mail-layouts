@@ -56,7 +56,7 @@
     }
   ],
   "footer": {
-    "copyright": "@2019 bilimkutusu",
+    "copyright": "@2019 Bilim Kutusu",
     "social": [
       {
         "url": "https://www.instagram.com/bilimkutusucom/",
@@ -89,7 +89,7 @@
         "url": "https://bilimkutusu.com/tr_TR/account/"
       },
       {
-        "text": "Siparişim",
+        "text": "Siparişlerim",
         "url": "https://bilimkutusu.com/tr_TR/account/orders/"
       }
     ]
