@@ -3,15 +3,16 @@
     <spacer size="16"></spacer>
     <p class="text-center">
       {{ data.footer.copyright }}<br />
-      {{#each data.footer.menu}}
-      <a href="{{ this.url }}">{{ this.text }}</a>
-      {{/each}}
+      <a href="mailto:bilgi@bilimkutusu.com">bilgi@bilimkutusu.com</a>
+      <a href="https://bilimkutusu.com/tr_TR/account/?utm_source={{ utm_source }}&utm_medium=email&utm_campaign={{ utm_campaign }}">Hesabım</a>
+      <a href="https://bilimkutusu.com/tr_TR/account/orders/?utm_source={{ utm_source }}&utm_medium=email&utm_campaign={{ utm_campaign }}">Siparişlerim</a>
     </p>
     <center>
       <menu class="footer-social">
         {{#each data.footer.social}}
         <item href="{{ this.url }}"><img src="{{ root }}{{ this.img }}"/></item>
         {{/each}}
+        <item href="https://bilimkutusu.com/tr_TR/?utm_source={{ utm_source }}&utm_medium=email&utm_campaign={{ utm_campaign }}"><img src="{{ root }}/assets/img/color-link-48.png"/></item>
       </menu>
     </center>
     {{#if unsubscribe}}
