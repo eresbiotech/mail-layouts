@@ -1,19 +1,20 @@
 {
+  "asseturl":"https://bilimkutusu.com/bundles/_themes/delirehberi/bilimkutusu/syliusshop/images/email/",
   "customer": {
-    "name": "Ömer Büyükçelik",
-    "email": "omer@eresbiotech.com",
-    "identityNumber": "11111111110"
+    "name": "{{customer.name}}",
+    "email": "{{email}}",
+    "identityNumber": "{{identityNumber}}"
   },
   "order": {
-    "shipmentNo": "0000001",
-    "paymentMethod": "Kredi Kartı",
-    "number": "0000001",
+    "shipmentNo": "{{shipmentNo}}",
+    "paymentMethod": "{{paymentMethod}}",
+    "number": "{{number}}",
     "shippingAddress": {
-      "phoneNumber": "+90 850 885 29 03",
-      "address": "Emek Mahallesi Bişkek Caddesi 44/6",
-      "town": "Çankaya",
-      "city": "Ankara",
-      "postcode": "06010"
+      "phoneNumber": "{{phoneNumber}}",
+      "address": "{{address}}",
+      "town": "{{town}}",
+      "city": "{{city}}",
+      "postcode": "{{postcode}}"
     },
     "billingAddress": {
       "phoneNumber": "+90 850 885 29 03",
