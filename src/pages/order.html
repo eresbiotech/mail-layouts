@@ -7,7 +7,7 @@ utm_source: order_successful
 utm_campaign: order_status
 ---
 
-<h1>Merhaba {- customer_fullname -}</h1>
+<h1>Merhaba {{ data.customer.fullName }}</h1>
 <p>
   Siparişiniz için teşekkür ederiz. Sipariniz 3 iş günü içersinde kargoya
   verilecektir. Bu esnada sipariş özetinize göz atın:
@@ -20,15 +20,15 @@ utm_campaign: order_status
     <columns large="6">
       <p>
         <strong>Ödeme Türü</strong><br />
-        {- payment_method -}
+        {{ data.order.paymentMethod }}
       </p>
       <p>
         <strong>E-posta Adresi</strong><br />
-        {- customer_email -}
+        {{ data.customer.email }}
       </p>
       <p>
         <strong>Sipariş Numrası</strong><br />
-        #{- order_number -}
+        #{{ data.order.number }}
       </p>
       <strong>Kargo Yöntemi </strong><br />
       PTT (1&ndash;3 Gün)<br />
@@ -36,21 +36,21 @@ utm_campaign: order_status
     <columns large="6">
       <p>
         <strong>Teslimat adresi</strong><br />
-        {- shipping_address.identity_number -}<br />
-        {- shipping_address.phone_number -}<br />
-        {- shipping_address.address -}<br />
-        {- shipping_address.town -} /
-        {- shipping_address.city -},
-        {- shipping_address.postcode -}
+        {{ data.customer.identityNumber }}<br />
+        {{ data.order.shippingAddress.address }}<br />
+        {{ data.order.shippingAddress.address }}<br />
+        {{ data.order.shippingAddress.town }} /
+        {{ data.order.shippingAddress.city }},
+        {{ data.order.shippingAddress.postcode }}
       </p>
       <p>
         <strong>Fatura adresi</strong><br />
-        {- billing_address.identity_number -}<br />
-        {- billing_address.phone_number -}<br />
-        {- billing_address.address -}<br />
-        {- billing_address.town -} /
-        {- billing_address.city -},
-        {- billing_address.postcode -}
+        {{ data.customer.identityNumber }}<br />
+        {{ data.order.billingAddress.address }}<br />
+        {{ data.order.billingAddress.address }}<br />
+        {{ data.order.billingAddress.town }} /
+        {{ data.order.billingAddress.city }},
+        {{ data.order.billingAddress.postcode }}
       </p>
     </columns>
   </row>
@@ -63,15 +63,15 @@ utm_campaign: order_status
     <th>Ürün</th>
     <th>Fiyat</th>
   </tr>
-  {-#each items-}
+  {{#each data.order.items}}
   <tr>
-    <td>{- name -} x {- quantity -}</td>
-    <td>{- price -}</td>
+    <td>{{ name }} x {{ quantity }}</td>
+    <td>{{ price }}</td>
   </tr>
-  {-/each-}
+  {{/each}}
   <tr>
     <td><b>Toplam:</b></td>
-    <td>{- items_total -}</td>
+    <td>{{ data.order.itemsTotal }}</td>
   </tr>
 </table>
 

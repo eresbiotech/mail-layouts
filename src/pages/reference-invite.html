@@ -13,7 +13,7 @@ utm_campaign: referral_invitation
     <columns>
       <h1>5₺ Kredinizi şimdi alın!<h1>
         <p>
-          Arkadaşınız {- user_name -} size Bilim Kutusu alışverişlerinizde
+          Arkadaşınız {{ data.customer.fullName }} size Bilim Kutusu alışverişlerinizde
           kullanabileceğiniz <b>5₺ değerinde</b> kredi gönderdi. Hemen Bilim Kutusu'na kayıt
           olup hediyenizi alabilirsiniz.
         </p>
@@ -32,5 +32,5 @@ utm_campaign: referral_invitation
       </center>
     </columns>
   </row>
-  <img src="{- hash -}" />
+  <img src="{{ data.hash }}" />
 </container>

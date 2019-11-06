@@ -10,9 +10,9 @@ blog: true
 
   <row>
     <columns>
-      <h1>Merhaba {{ data.customer.name }}</h1>
+      <h1>Merhaba {{ data.customer.fullName }}</h1>
       <p>
-        <a href="{- url -}">Bu linkten</a> arkadaşlarınızı davet edip indirimler
+        <a href="{{ data.url }}">Bu linkten</a> arkadaşlarınızı davet edip indirimler
         kazanabilirsiniz.
       </p>
     </columns>

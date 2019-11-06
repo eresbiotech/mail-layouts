@@ -16,10 +16,10 @@ utm_campaign: user_request
       <p>
         Kaydınız başarı ile tamamlanmıştır.
       </p>
-      <p>Teşekkürler {- name -}</p>
+      <p>Teşekkürler {{ data.customer.fullName }}</p>
       <br />
       E-posta adresinizi doğrulamak için lütfen
-      <a href="{- url -}">bu adresini ziyaret edin</a>.
+      <a href="{{ data.url }}">bu adresini ziyaret edin</a>.
     </columns>
   </row>
 </container>

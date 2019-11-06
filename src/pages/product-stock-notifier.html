@@ -12,9 +12,9 @@ utm_campaign: inventory
 
   <row>
     <columns>
-      <h1>{- product_name -} Ürünü stoğa eklendi.</h1>
+      <h1>{{ data.product.name }} Ürünü stoğa eklendi.</h1>
       Ürünü Satın almak için lütfen
-      <a href="{- product_url -}">bu adresini ziyaret edin</a>.
+      <a href="{{ data.product.url }}">bu adresini ziyaret edin</a>.
     </columns>
   </row>
 </container>

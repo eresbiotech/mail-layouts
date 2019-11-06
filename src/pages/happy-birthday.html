@@ -10,11 +10,11 @@ blog: true
 
   <row>
     <columns>
-      <h1>Doğum Günü Kutlu Olsun {{ data.customer.name }}</h1>
+      <h1>Doğum Günü Kutlu Olsun {{ data.customer.fullName }}</h1>
       <p>
         Doğum günüze özel olarak size promosyon kodunu tanımladık.
       </p>
-      <p>Promosyon kodu <b>{- promotion_code -}</b>.</p>
+      <p>Promosyon kodu <b>{{ data.promotionCode }}</b>.</p>
     </columns>
   </row>
 </container>

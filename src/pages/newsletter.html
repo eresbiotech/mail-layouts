@@ -16,13 +16,13 @@ utm_campaign: newsletter
       <p>
         Kaydınız başarı ile tamamlanmıştır.
       </p>
-      <p>Teşekkürler {- email -}</p>
+      <p>Teşekkürler {{ data.customer.email }}</p>
     </columns>
   </row>
 
   <row>
     <columns large="1" class="quote">
-      <img src="{{ root }}/assets/img/marie-curie.jpg" class="thumbnail" />
+      <img src="{{ data.asseturl }}/assets/img/marie-curie.jpg" class="thumbnail" />
     </columns>
     <columns>
       <blockquote>

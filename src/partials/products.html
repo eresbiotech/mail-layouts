@@ -1,41 +1,35 @@
 <row class="collapsed products">
-  <columns large="4">
-    <center class="product">
-      <img src="{{ data.asseturl }}astronot-ciftciler-deney-seti.jpg" />
-    </center>
-    <h5 class="text-center">Astronot Çiftçiler Deney Seti</h5>
-    <h6 class="text-center product-subtitle">
-      GELECEĞIN ASTRONOTLARI İÇIN
-    </h6>
-    <button
-      class="product-button expand"
-      href="https://bilimkutusu.com/tr_TR/products/astronot-ciftciler-deney-seti?utm_source={{ utm_source }}&utm_medium=email&utm_campaign={{ utm_campaign }}"
-    ></button>
-  </columns>
-  <columns large="4">
-    <center class="product">
-      <img src="{{ data.asseturl }}asit-baz-ph.jpg" />
-    </center>
-    <h5 class="text-center">Asit Baz Ph</h5>
-    <h6 class="text-center product-subtitle">
-      GELECEĞIN KIMYA PROFESÖRLERI İÇIN
-    </h6>
-    <button
-      class="product-button"
-      href="https://bilimkutusu.com/tr_TR/products/asit-baz-ph?utm_source={{ utm_source }}&utm_medium=email&utm_campaign={{ utm_campaign }}"
-    ></button>
-  </columns>
-  <columns large="4">
-    <center class="product">
-      <img src="{{ data.asseturl }}kagit-devre-ve-elektrik.jpg" />
-    </center>
-    <h5 class="text-center">Kağıt Devre ve Elektrik</h5>
-    <h6 class="text-center product-subtitle">
-      GELECEĞİN ELEKTRİK MÜHENDİSLERİ İÇİN
-    </h6>
-    <button
-      class="product-button"
-      href="https://bilimkutusu.com/tr_TR/products/kagit-devre-ve-elektrik?utm_source={{ utm_source }}&utm_medium=email&utm_campaign={{ utm_campaign }}"
-    ></button>
-  </columns>
+    <columns large="4">
+        <center class="product">
+            <img src="{{ data.asseturl }}{{ data.footerProduct_1.img }}"/>
+        </center>
+        <h5 class="text-center">{{data.footerProduct_1.name}}</h5>
+        <h6 class="text-center product-subtitle">{{data.footerProduct_1.subTitle}}</h6>
+        <button
+                class="product-button expand"
+                href="{{data.footerProduct_1.url}}?utm_source={{ utm_source }}&utm_medium=email&utm_campaign={{ utm_campaign }}"
+        ></button>
+    </columns>
+    <columns large="4">
+        <center class="product">
+            <img src="{{ data.asseturl }}{{ data.footerProduct_2.img }}"/>
+        </center>
+        <h5 class="text-center">{{data.footerProduct_2.name}}</h5>
+        <h6 class="text-center product-subtitle">{{data.footerProduct_2.subTitle}}</h6>
+        <button
+                class="product-button expand"
+                href="{{data.footerProduct_2.url}}?utm_source={{ utm_source }}&utm_medium=email&utm_campaign={{ utm_campaign }}"
+        ></button>
+    </columns>
+    <columns large="4">
+        <center class="product">
+            <img src="{{ data.asseturl }}{{ data.footerProduct_3.img }}"/>
+        </center>
+        <h5 class="text-center">{{data.footerProduct_3.name}}</h5>
+        <h6 class="text-center product-subtitle">{{data.footerProduct_3.subTitle}}</h6>
+        <button
+                class="product-button expand"
+                href="{{data.footerProduct_3.url}}?utm_source={{ utm_source }}&utm_medium=email&utm_campaign={{ utm_campaign }}"
+        ></button>
+    </columns>
 </row>

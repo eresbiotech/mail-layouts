@@ -10,13 +10,13 @@ blog: true
 
   <row>
     <columns>
-      <h1>Merhaba {{ data.customer.name }}</h1>
+      <h1>Merhaba {{ data.customer.fullName }}</h1>
       <p>
         <p>
           Yeni üyemiz olduğunuz için size kutularımızı denemek için promosyon kodu
           tanımladık.
         </p>
-        <p>Promosyon kodu <b>{- promotion_code -}</b>.</p>
+        <p>Promosyon kodu <b>{{ data.promotionCode }}</b>.</p>
       </p>
     </columns>
   </row>
