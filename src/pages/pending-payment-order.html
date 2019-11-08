@@ -64,12 +64,12 @@ utm_campaign: order_status
     <th>Ürün</th>
     <th>Fiyat</th>
   </tr>
-  {{#each data.order.items}}
-  <tr>
-    <td>{{ name }} x {{ quantity }}</td>
-    <td>{{ price }}</td>
+  {{data.items_eachstart}}
+  <tr style="padding:0;text-align:left;vertical-align:top">
+    <td>{{ data.items_name }} x {{ data.items_quantity }}</td>
+    <td>{{ data.items_price }}</td>
   </tr>
-  {{/each}}
+  {{data.items_eachend}}
   <tr>
     <td><b>Toplam:</b></td>
     <td>{{ data.order.itemsTotal }}</td>

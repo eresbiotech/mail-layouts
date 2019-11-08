@@ -1,6 +1,11 @@
 {
   "asseturl": "https://bilimkutusu.com/bundles/_themes/delirehberi/bilimkutusu/syliusshop/images/email/",
   "headerBackground": "bk-logo-header.png",
+  "items_eachstart": "{{#each items}}",
+  "items_eachend": "{{/each}}",
+  "items_name": "{{order.item.name}}",
+  "items_quantity": "{{order.item.quantity}}",
+  "items_price": "{{order.item.price}}",
   "customer": {
     "fullName": "{{customer.fullname}}",
     "firstName": "{{customer.firstname}}",
@@ -25,13 +30,6 @@
       "city": "{{order.billing_address.city}}",
       "postcode": "{{order.billing_address.postcode}}"
     },
-    "items": [
-      {
-        "name": "{{order.item.name}}",
-        "quantity": "{{order.item.quantity}}",
-        "price": "{{order.item.price}}"
-      }
-    ],
     "itemsTotal": "{{order.items_total}}"
   },
   "promotionCode": "{{promotion_code}}",
