@@ -32,7 +32,7 @@
     },
     "itemsTotal": "{{order.items_total}}"
   },
-  "promotionCode": "{{promotion_code}}",
+  "promotionCode": "{{promotion.code}}",
   "blogs": [
     {
       "title": "23 EYLÜL EKİNOKS - GÜNDÜZ VE GECE EŞİT OLUYOR",
@@ -52,19 +52,19 @@
     "social": [
       {
         "url": "https://www.instagram.com/bilimkutusucom/",
-        "img": "/assets/img/color-instagram-48.png"
+        "img": "https://bilimkutusu.com/bundles/_themes/delirehberi/bilimkutusu/syliusshop/images/email/color-instagram-48.png"
       },
       {
         "url": "https://twitter.com/bilimkutusucom/",
-        "img": "/assets/img/color-twitter-48.png"
+        "img": "https://bilimkutusu.com/bundles/_themes/delirehberi/bilimkutusu/syliusshop/images/email/color-twitter-48.png"
       },
       {
         "url": "https://www.facebook.com/bilimkutusucom/",
-        "img": "/assets/img/color-facebook-48.png"
+        "img": "https://bilimkutusu.com/bundles/_themes/delirehberi/bilimkutusu/syliusshop/images/email/color-facebook-48.png"
       },
       {
         "url": "https://www.youtube.com/channel/UCwRy2pkOr4Khu6G7Ag7VZqA",
-        "img": "/assets/img/color-youtube-48.png"
+        "img": "https://bilimkutusu.com/bundles/_themes/delirehberi/bilimkutusu/syliusshop/images/email/color-youtube-48.png"
       }
     ],
     "menu": [
