@@ -6,18 +6,25 @@ blog: true
 ---
 
 <container>
-  <spacer size="16"></spacer>
+    <spacer size="16"></spacer>
 
-  <row>
-    <columns>
-      <h1>Merhaba {{ data.customer.fullName }}</h1>
-      <p>
-        <p>
-          Yeni üyemiz olduğunuz için size kutularımızı denemek için promosyon kodu
-          tanımladık.
-        </p>
-        <p>Promosyon kodu <b>{{ data.promotionCode }}</b>.</p>
-      </p>
-    </columns>
-  </row>
+    <row>
+        <columns>
+            <h3>Bilim Kutusu ailesine hoşgeldiniz</h3>
+            <p>Merhaba {{ data.customer.fullName }}
+                 <br>
+                Bilim Kutusu ürünlerini deneyimleyebilmeniz için size özel, bir sonraki alışverişinizde kullanabileceğiniz
+                sepette %10 indirim sağlayan bir indirim kuponu tanımladık. "<b>{{ data.promotionCode }}</b>" kodunu kullanarak
+                bir sonraki alışverişiniz için sepet tutarınızda %10 indirimden yararlanabilirsiniz.
+            </p>
+
+            <p>
+                İndirimli alışverişe hemen başlamak için <a href="https://bilimkutusu.com/tr_TR/magaza?utm_source=in-text&utm_medium=email&utm_campaign=new_registered">mağazamızı</a> ziyaret edebilirsiniz.
+            </p>
+
+            <button href="https://bilimkutusu.com/tr_TR/magaza?utm_source=button&utm_medium=email&utm_campaign=new_registered">
+                Hemen Al
+            </button>
+        </columns>
+    </row>
 </container>
