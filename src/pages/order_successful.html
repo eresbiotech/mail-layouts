@@ -1,17 +1,17 @@
 ---
-subject: Shipment Confirmation Email Template Subject
-description: Shipment Confirmation Email Template Description
-blog: false
-product: true
-utm_source: bank_transfer
-utm_campaign: order_status
+subject: Siparişiniz alınmıştır.
+description: Siparişiniz için teşekkür ederiz. Sipariniz 3 iş günü içersinde kargoya verilecektir.
+blog: true
+product: false
+utm_source: order_successful
+utm_campaign: order_detail
+mailgun_code: order_successful
 ---
 
 <h1>Merhaba {{ data.customer.fullName }}</h1>
-
 <p>
-  Siparişiniz için teşekkür ederiz. Ödemeniz gerçekleşene kadar siparişiniz
-  beklemede olacak. Bu esnada sipariş özetinize göz atın:
+  Siparişiniz için teşekkür ederiz. Sipariniz 3 iş günü içersinde kargoya
+  verilecektir. Bu sırada sipariş özetinize göz atın:
 </p>
 
 <spacer size="16"></spacer>
@@ -76,31 +76,28 @@ utm_campaign: order_status
   </tr>
 </table>
 
-<hr />
-
-<h4>Sıradaki ne?</h4>
-<p>
-  Alttaki banka bilgilerine havale yaptıktan sonra siparişiniz onaylanacaktır.
-</p>
-<callout class="secondary">
-  <p>
-    <b>Hesap Adı</b><br />
-    {{ data.bankInformation.name }}:
-  </p>
-  <p>
-    <strong>Banka</strong><br />
-    {{ data.bankInformation.bank }}
-  </p>
-  <p>
-    <strong>Hesap numarası</strong><br />
-    {{ data.bankInformation.number }}
-  </p>
-  <p>
-    <strong>Sıralama kodu</strong><br />
-    682
-  </p>
-  <p>
-    <strong>IBAN </strong><br />
-    {{ data.bankInformation.iban }}<br />
-  </p>
-</callout>
+<spacer size="50"></spacer>
+<row>
+  <columns>
+    <a href="https://bilimkutusu.com/tr_TR/blog/article/evde-bilim-cocugunuzla-bilim-maceranizda-unutmamaniz-gereken-8-onemli-madde?utm_source=blog_title&utm_medium=email&utm_campaign=order_detail">
+      <h3>Evde Bilim : Çocuğunuzla Bilim Maceranızda unutmamanız gereken 8 önemli
+        madde!</h3>
+    </a>
+  </columns>
+</row>
+<row>
+  <columns large="6">
+    <a href="https://bilimkutusu.com/tr_TR/blog/article/evde-bilim-cocugunuzla-bilim-maceranizda-unutmamaniz-gereken-8-onemli-madde?utm_source=blog_image&utm_medium=email&utm_campaign=order_detail">
+      <img class="thumbnail" style="width: 250px" src="https://bilimkutusu.com/media/cache/blog_featured/88/df/49eab87ba17e0816d3574a49478d.jpeg" />
+    </a>
+  </columns>
+  <columns large="6">
+    <p>
+      Evde bilim ile ilgili deneyler yapmak hem sizin hem de çocuğunuzun verimli
+      ve keyifli vakit geçirmenizi sağlar. Evde bilimsel etkinlikler
+      gerçekleştirmek ise her zaman kolay olmayabilir. Ancak ufak ipuçlarına
+      dikkat ederek bunu kolaylaştırabilirsiniz.
+    </p>
+    <a href="https://bilimkutusu.com/tr_TR/blog/article/evde-bilim-cocugunuzla-bilim-maceranizda-unutmamaniz-gereken-8-onemli-madde?utm_source=blog_link&utm_medium=email&utm_campaign=order_detail">Devamını oku</a>
+  </columns>
+</row>

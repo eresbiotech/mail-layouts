@@ -1,15 +1,16 @@
 ---
-subject: Shipment Email Template Subject
-description: Shipment Email Template Description
-product: true
-blog: false
+subject: Kargonuz Yola Çıktı
+description: Kargonuzu {{ data.order.shipmentNo }} takip kodu ile PTT üzerinden takip edebilirsiniz.
+product: false
+blog: true
 utm_source: shipment_confirmation
 utm_campaign: order_status
+mailgun_code: shipment_confirmation
 ---
 
 <row>
     <columns>
-        <h1>Aramıza katıldığınız için teşekkür ederiz.</h1>
+        <h2>Aramıza katıldığınız için teşekkür ederiz.</h2>
         <p>
         Kutunuz yola çıktı. <b>{{ data.order.shipmentNo }}</b> takip kodu ile
         <a href="http://gonderitakip.ptt.gov.tr/">bu linkten</a> takip

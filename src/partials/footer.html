@@ -4,15 +4,15 @@
     <p class="text-center">
       {{ data.footer.copyright }}<br />
       <a href="mailto:bilgi@bilimkutusu.com">bilgi@bilimkutusu.com</a>
-      <a href="https://bilimkutusu.com/tr_TR/account/?utm_source={{ utm_source }}&utm_medium=email&utm_campaign={{ utm_campaign }}">Hesabım</a>
-      <a href="https://bilimkutusu.com/tr_TR/account/orders/?utm_source={{ utm_source }}&utm_medium=email&utm_campaign={{ utm_campaign }}">Siparişlerim</a>
+      <a href="https://bilimkutusu.com/tr_TR/account/?utm_source=footer_menu&utm_medium=email&utm_campaign={{ utm_campaign }}">Hesabım</a>
+      <a href="https://bilimkutusu.com/tr_TR/account/orders/?utm_source=footer_menu&utm_medium=email&utm_campaign={{ utm_campaign }}">Siparişlerim</a>
     </p>
     <center>
       <menu class="footer-social">
         {{#each data.footer.social}}
         <item href="{{ this.url }}"><img src="{{ this.img }}"/></item>
         {{/each}}
-        <item href="https://bilimkutusu.com/tr_TR/?utm_source={{ utm_source }}&utm_medium=email&utm_campaign={{ utm_campaign }}"><img src="{{ data.asseturl }}color-link-48.png"/></item>
+        <item href="https://bilimkutusu.com/tr_TR/?utm_source=footer_social_icons&utm_medium=email&utm_campaign={{ utm_campaign }}"><img src="{{ data.asseturl }}color-link-48.png"/></item>
       </menu>
     </center>
     {{#if unsubscribe}}

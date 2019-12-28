@@ -1,16 +1,18 @@
 ---
-subject: Order Email Template Subject
-description: Order Email Template Description
-blog: false
-product: true
-utm_source: order_successful
+subject: Siparişinizin alınmıştır.
+description: Siparişiniz için teşekkür ederiz. Ödemeniz gerçekleşene kadar siparişiniz beklemede olacak.
+blog: true
+product: false
+utm_source: bank_transfer
 utm_campaign: order_status
+mailgun_code: bank_transfer
 ---
 
 <h1>Merhaba {{ data.customer.fullName }}</h1>
+
 <p>
-  Siparişiniz için teşekkür ederiz. Sipariniz 3 iş günü içersinde kargoya
-  verilecektir. Bu esnada sipariş özetinize göz atın:
+  Siparişiniz için teşekkür ederiz. Ödemeniz gerçekleşene kadar siparişiniz
+  beklemede olacak. Bu esnada sipariş özetinize göz atın:
 </p>
 
 <spacer size="16"></spacer>
@@ -75,31 +77,31 @@ utm_campaign: order_status
   </tr>
 </table>
 
-<spacer size="16"></spacer>
+<hr />
 
-<row>
-<center>
-    <a
-    href="https://bilimkutusu.com/tr_TR/blog/article/evde-bilim-cocugunuzla-bilim-maceranizda-unutmamaniz-gereken-8-onemli-madde?utm_source=order_successful&utm_medium=email&utm_campaign=blog_detail"
-    >
-    <img
-        class="thumbnail"
-        src="https://bilimkutusu.com/media/cache/blog_featured/88/df/49eab87ba17e0816d3574a49478d.jpeg"
-    />
-    </a>
-</center>
-<h3>
-    Evde Bilim : Çocuğunuzla Bilim Maceranızda unutmamanız gereken 8 önemli
-    madde!
-</h3>
+<h4>Sıradaki ne?</h4>
 <p>
-    Evde bilim ile ilgili deneyler yapmak hem sizin hem de çocuğunuzun verimli
-    ve keyifli vakit geçirmenizi sağlar. Evde bilimsel etkinlikler
-    gerçekleştirmek ise her zaman kolay olmayabilir. Ancak ufak ipuçlarına
-    dikkat ederek bunu kolaylaştırabilirsiniz.
+  Alttaki banka bilgilerine havale yaptıktan sonra siparişiniz onaylanacaktır.
 </p>
-<a
-    href="https://bilimkutusu.com/tr_TR/blog/article/evde-bilim-cocugunuzla-bilim-maceranizda-unutmamaniz-gereken-8-onemli-madde?utm_source=order_successful&utm_medium=email&utm_campaign=blog_detail"
-    >Devamını oku</a
->
-</row>
+<callout class="secondary">
+  <p>
+    <b>Hesap Adı</b><br />
+    {{ data.bankInformation.name }}
+  </p>
+  <p>
+    <strong>Banka</strong><br />
+    {{ data.bankInformation.bank }}
+  </p>
+  <p>
+    <strong>Hesap numarası</strong><br />
+    {{ data.bankInformation.number }}
+  </p>
+  <p>
+    <strong>Sıralama kodu</strong><br />
+    682
+  </p>
+  <p>
+    <strong>IBAN </strong><br />
+    {{ data.bankInformation.iban }}<br />
+  </p>
+</callout>

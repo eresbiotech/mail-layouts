@@ -1,34 +1,64 @@
 ---
-subject: Newsletter Email Template Subject
-description: Newsletter Email Template Description
+subject: Bilim Kutusu'nu öner indirimi kazan!
+description: Bilim Kutusu olarak sizlere en keyifli alışveriş deneyimini sunmak için çalışıyoruz. Yeni kampanyamız indirim severleri çok sevindirecek.
 blog: false
-product: false
-utm_source: newsletter_successful
+product: true
+utm_source: newsletter
 utm_campaign: newsletter
 ---
 
 <container>
-  <spacer size="16"></spacer>
+    <spacer size="16"></spacer>
 
-  <row>
-    <columns>
-      <h1>Bilim dünyasına hoşgeldiniz!</h1>
-      <p>
-        Kaydınız başarı ile tamamlanmıştır.
-      </p>
-      <p>Teşekkürler {{ data.customer.email }}</p>
-    </columns>
-  </row>
+    <row>
+        <columns>
+            <h3>Bilim Kutusu'nu öner indirimi kazan!</h3>
+            <row>
+                <columns>
+                    <img src="https://bilimkutusu.com/media/cache/blog_featured/2a/a4/202e25b04c988208de5c826ecc3c.png" alt="">
+                </columns>
+            </row>
+            <p>
+                Bilim Kutusu olarak sizlere en keyifli alışveriş deneyimini sunmak için çalışıyoruz. Yeni kampanyamız indirim severleri çok sevindirecek.
+            </p>
+            <p>
+                Bilim Kutusu’nu arkadaşınıza önererek <u>SINIRSIZ</u> indirim kazanmak ister misiniz?
+            </p>
+            <p>
+                Bilimkutusu.com sitemizde yeni geliştirdiğimiz “Arkadaşına öner, indirim kazan” uygulaması ile davet ettiğiniz her arkadaşınız için 1₺ kredi kazanabilir ve davet
+                ettiğiniz kişiye de 5₺ hediye etmiş olursunuz.
+            </p>
+            <p>
+                31 Mart 2020’ye kadar devam edecek kampanyaya katılmak için herhangi bir limit bulunmuyor. İstediğiniz kadar çok arkadaşınızı davet ederek sınırsız* kredi
+                kazanabilirsiniz.
+            </p>
+        </columns>
+    </row>
+    <row>
+        <columns large="6">
+            <a href="https://bilimkutusu.com/tr_TR/blog/article/bilim-kutusu-nu-oner-indirimi-kazan?utm_source=blog-image&utm_medium=email&utm_campaign=newsletter">
+                <img class="thumbnail" style="width: 250px" src="https://bilimkutusu.com/media/cache/blog_featured/2a/a4/202e25b04c988208de5c826ecc3c.png"/>
+            </a>
+        </columns>
+        <columns large="6">
+            <a href="https://bilimkutusu.com/tr_TR/blog/article/bilim-kutusu-nu-oner-indirimi-kazan?utm_source=blog-title&utm_medium=email&utm_campaign=newsletter">
+                <h3>Bilim Kutusu'nu öner indirimi kazan!</h3>
+            </a>
+            <button href="https://bilimkutusu.com/tr_TR/blog/article/bilim-kutusu-nu-oner-indirimi-kazan?utm_source=button&utm_medium=email&utm_campaign=newsletter">
+                Hemen Kazan
+            </button>
+        </columns>
+    </row>
 
-  <row>
-    <columns large="1" class="quote">
-      <img src="{{ data.asseturl }}/assets/img/marie-curie.jpg" class="thumbnail" />
-    </columns>
-    <columns>
-      <blockquote>
-        İnsanlar konusunda daha az, fikirler konusunda daha çok meraklı olun.
-        <b>Marie Curie</b>
-      </blockquote>
-    </columns>
-  </row>
+    <row>
+        <columns large="1" class="quote">
+            <img src="{{ data.asseturl }}/marie-curie.jpg" class="thumbnail"/>
+        </columns>
+        <columns>
+            <blockquote>
+                İnsanlar konusunda daha az, fikirler konusunda daha çok meraklı olun.
+                <b>Marie Curie</b>
+            </blockquote>
+        </columns>
+    </row>
 </container>

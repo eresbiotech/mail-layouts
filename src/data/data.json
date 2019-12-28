@@ -35,16 +35,16 @@
   "promotionCode": "{{promotion.code}}",
   "blogs": [
     {
-      "title": "23 EYLÜL EKİNOKS - GÜNDÜZ VE GECE EŞİT OLUYOR",
-      "content": "Eylül ayının ortalarına geldiğimiz şu günlerde havalar yaz aylarına göre soğumaya başladı. 23 Eylül’deki Sonbahar Ekinoksu yaklaşıyor.",
-      "img": "https://bilimkutusu.com/media/cache/blog_featured/01/35/a6c1d7fcdc3885c2eaa5ffb35d1e.jpeg",
-      "url": "https://bilimkutusu.com/tr_TR/blog/article/23-eylul-ekinoks-gunduz-ve-gece-esit-oluyor"
+      "title": "Bilim Kutusu'nu öner indirimi kazan!",
+      "content": "Bilim Kutusu olarak sizlere en keyifli alışveriş deneyimini sunmak için çalışıyoruz. Yeni kampanyamız indirim severleri çok sevindirecek.",
+      "img": "https://bilimkutusu.com/media/cache/blog_featured/2a/a4/202e25b04c988208de5c826ecc3c.png",
+      "url": "https://bilimkutusu.com/tr_TR/blog/article/bilim-kutusu-nu-oner-indirimi-kazan"
     },
     {
-      "title": "YAZ BİLİM KAMPI BAŞLIYOR!",
-      "content": "Bilim Kutusu, yaz tatilini verimli değerlendirmek isteyenler için Bilime Merhaba bilim kampını açıyor.",
-      "img": "https://bilimkutusu.com/media/cache/blog_featured/33/49/1a65e5244c1e5604d13ff1eb6873.png",
-      "url": "https://bilimkutusu.com/tr_TR/blog/article/yaz-bilim-kampi-basliyor"
+      "title": "Neval Çolak'ın Bilim Kutusu Deneyimini Okuyun!",
+      "content": "Neval Çolak, pek çok çocuk kitabını inceleyip, çocuklarla ilgili püf noktalardan bahseden Selimo'nun Kitapları isimli Instagram hesabında paylaşımlar yapıyor.",
+      "img": "https://bilimkutusu.com/media/cache/blog_featured/75/dd/35cd8c316bab880e9f41243af518.jpeg",
+      "url": "https://bilimkutusu.com/tr_TR/blog/article/neval-colakin-bilim-kutusu-deneyimini-okuyun"
     }
   ],
   "footer": {
@@ -101,7 +101,7 @@
     "url": "https://bilimkutusu.com/tr_TR/products/astronot-ciftciler-deney-seti"
   },
   "footerProduct_2":   {
-    "name": "Asit Baz Ph",
+    "name": "Asit Baz Ph Deney Seti",
     "subTitle": "GELECEĞIN KIMYA PROFESÖRLERI İÇİN",
     "img": "asit-baz-ph.jpg",
     "url": "https://bilimkutusu.com/tr_TR/products/asit-baz-ph"

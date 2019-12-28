@@ -1,10 +1,11 @@
 ---
-subject: Product Stock Notifier Email Template Subject
-description: Product Stock Notifier Email Template Description
-product: true
-blog: false
+subject: Beklediğiniz {{data.product.name}} ürünü stoğa eklendi.
+description: Beklediğiniz {{data.product.name}} ürünü stoğa eklendi. Tükenmeden alın
+product: false
+blog: true
 utm_source: product_stock_notifier
-utm_campaign: inventory
+utm_campaign: product_in_stock
+mailgun_code: reset_password_token
 ---
 
 <container>
@@ -12,9 +13,13 @@ utm_campaign: inventory
 
   <row>
     <columns>
-      <h1>{{ data.product.name }} Ürünü stoğa eklendi.</h1>
-      Ürünü Satın almak için lütfen
-      <a href="{{ data.product.url }}">bu adresini ziyaret edin</a>.
+      <h1>Beklediğiniz ürün geldi!</h1>
+      <p>
+        Stoklara gelince haberdar olmak istediğiniz "{{data.product.name}}" ürünü artık stoklarda.
+      </p>
+      <button href="{{ data.product.url }}?utm_source=button&utm_medium=email&utm_campaign=product_in_stock">
+        Tükenmeden Al
+      </button>
     </columns>
   </row>
 </container>

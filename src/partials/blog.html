@@ -4,10 +4,8 @@
       <columns small="6">
         <h4>Güncel Yazılar:</h4>
       </columns>
-      <columns small="1">
-        <a href="https://bilimkutusu.com/tr_TR/blog/" class="blog-seeall"
-          >Tümünü Gör</a
-        >
+      <columns small="2">
+        <a href="https://bilimkutusu.com/tr_TR/blog/?utm_source=see_all&utm_medium=email&utm_campaign={{ utm_campaign }}" class="blog-seeall">Tümünü Gör</a>
       </columns>
     </row>
 
@@ -24,10 +22,11 @@
         </a>
         <p>
           {{ this.content }}
-          <a href="{{ this.url }}">Devamını oku</a>
         </p>
+        <a href="{{ this.url }}">Devamını oku</a>
       </columns>
     </row>
+    <br><br>
     {{/each}}
   </columns>
 </row>

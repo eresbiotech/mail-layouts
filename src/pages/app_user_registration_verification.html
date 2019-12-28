@@ -1,10 +1,11 @@
 ---
-subject: User Registration Email Template Subject
-description: User Registration Email Template Description
+subject: Kaydınız başarı ile tamamlanmıştır.
+description: Kaydınız başarı ile tamamlanmıştır.
 product: true
-blog: false
-utm_source: app_user_registration
-utm_campaign: user_request
+blog: true
+utm_source: registeration
+utm_campaign: registration
+mailgun_code: app_user_registration_verification
 ---
 
 <container>
@@ -16,7 +17,6 @@ utm_campaign: user_request
       <p>
         Kaydınız başarı ile tamamlanmıştır.
       </p>
-      <p>Teşekkürler {{ data.customer.fullName }}</p>
       <br />
       E-posta adresinizi doğrulamak için lütfen
       <a href="{{ data.url }}">bu adresini ziyaret edin</a>.
